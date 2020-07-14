@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NetWorkSettingActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:id="@+id/ntkACT_center"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="260sp">
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/ntkACT_et1"
+                android:gravity="center"
+                android:maxLength="3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/ntkACT_et2"
+                android:gravity="center"
+                android:maxLength="3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/ntkACT_et3"
+                android:gravity="center"
+                android:maxLength="3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <EditText
+                android:id="@+id/ntkACT_et4"
+                android:gravity="center"
+                android:maxLength="3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/nwsAC_ok"
+            android:text="确定"
+            android:background="@drawable/btn_style"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
